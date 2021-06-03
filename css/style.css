@@ -42,7 +42,6 @@ body {
     width: 90%;
     display: block;
     margin: auto;
-    overflow: hidden;
 } 
 
 .camera-stream{
@@ -136,7 +135,7 @@ body {
 .meeting-details-input label {
     text-align: left;
     display: block;
-    color: #a299a2;
+    color: #b7afb7;
     margin: .3rem 0;
     font-weight: 600;
 }
@@ -169,6 +168,30 @@ body {
   src: url(Inter-Regular.ttf);
 }
 
+.icon a {
+    display:block;
+    padding:0 10px; 
+    color:#b7afb7;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+.icon ul ul {
+    display: none;
+    position: absolute; 
+    top: 60px; 
+}
+
+ .icon ul li:hover > ul {
+    display:inherit;
+}
+    
+.icon ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
 
 @media screen and (max-width: 800px)  {
     .content-container {
@@ -223,3 +246,4 @@ body {
         font-size:10px;
     }
 }
+
