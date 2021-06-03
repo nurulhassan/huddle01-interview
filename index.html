@@ -3,13 +3,57 @@
 <head>
 	<meta charset="utf-8">
 	<title>Huddle01 Interview Assessment</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="main">
 		<div class="logo-head"> 
 			<a href="/"><img src="./img/logo.svg" alt="logo" class="logo-img"></a>
 		</div>
-	</div>
-</body>
-</html>
+		<div class="content-container">
+			<div class="video">
+				<div class="camera">
+					<div class="camera-stream"></div>
+					<video autoplay class="flip-vid-av"></video>
+
+					<div class="bottom-menu">
+						<div class="icon">
+							<span class="icon-span">
+								<img src="./img/video.svg" alt="VideoOn" >		
+							</span>
+
+							Video Settings &nbsp;
+							
+							<img src="./img/iconmonstr-arrow-24.png" >
+						</div>
+
+						<div class="icon">
+							<span class="icon-span">
+								<img src="./img/MicOn.svg" alt="MicOn">		
+							</span>Audio Settings &nbsp;
+							<img src="./img/iconmonstr-arrow-24.png" >
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="meeting-details">
+				<div class="inner-section">
+					<h2>Have a Look Around</h2>
+					<p>Review how your audio and video work in calls</p>
+					<div class="meeting-details-input">
+						<label for="display-name"> Your Name* </label>
+						<input type="text" placeholder="Please enter your name" value="">
+					</div>
+					<div class="meeting-details-input">
+						<label for="display-name">Password </label>
+						<input type="password" placeholder="Please enter password (if you have one)" value="">
+					</div>
+					<button type="submit" class="meeting-details-input">Enter Meeting</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
