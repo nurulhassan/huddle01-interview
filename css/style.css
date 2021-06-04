@@ -180,6 +180,10 @@ body {
     height: 9px;
 }
 
+.icon ul li img:hover {
+    transform: rotate(90deg);
+}
+
 .icon ul {
     list-style-type: none;
     padding: 0;
