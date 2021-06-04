@@ -1,6 +1,6 @@
 body {
     background: #000;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
 }
 
 .main {
@@ -121,7 +121,6 @@ body {
     margin-bottom: 1.38px;
     font-size: 37px;
     background:linear-gradient( 101.76deg,#f37777,#d62ec0 55.05%,#1124c3);
-    
     font-weight: 700;
     -webkit-background-clip: text;
     color: transparent;
@@ -129,7 +128,6 @@ body {
 
 .inner-section p {
     margin-top: 0px;
-    margin-bottom: : 0px;
     font-weight: 500;
     color: #858c9e;
 }
@@ -169,7 +167,7 @@ body {
     background: linear-gradient(150.76deg ,#1a2ab4 -3.15%, #8e1fc7 55.05%,#e8a2a2 110.87%);
 }
 
-  .icon a {
+.icon a {
     display:block;
     color:#b7afb7;
     line-height: 47px;
@@ -213,6 +211,21 @@ body {
     margin: auto;
     width: 30%;
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  src: url('../font/Inter-Regular.ttf') format('truetype'),
+       url('../font/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../font/Inter-ExtraBold.ttf') format('truetype'),
+}
+
 @media screen and (max-width: 800px)  {
     .content-container {
         width:100%;
@@ -243,6 +256,10 @@ body {
         transform:translate(-50%,-60%) scale(.6);
     }
 
+.icon-span {
+    height: 30px;
+    width: 30px;
+}
     .inner-section {
         width: 90%;
         margin-top: 8px;
@@ -264,6 +281,6 @@ body {
     }
 
     .inner-section p {
-        font-size:10px;
+        font-size:11px;
     }
 }
