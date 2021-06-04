@@ -1,6 +1,6 @@
 body {
     background: #000;
-    font-family: 'Inter',sans-serif;;
+    font-family: 'Inter', sans-serif;
 }
 
 .main {
@@ -18,7 +18,7 @@ body {
 }
 
 .content-container{
-	width: 100%;
+    width: 100%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -27,8 +27,8 @@ body {
 }
 
 .video{
-	position: relative;
-	width : 50%;
+    position: relative;
+    width : 50%;
 }
 
 .camera {
@@ -39,7 +39,7 @@ body {
     justify-content: center;
     background: #0e0e0e;
     border-radius: 4px;
-    width: 90%;
+    width: 85%;
     display: block;
     margin: auto;
 } 
@@ -57,10 +57,10 @@ body {
 }
 
 .bottom-menu{
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: #1a1a1a;
+    background: #161616;
     position: absolute;
     bottom: 0;
     height: 3.25em;
@@ -76,18 +76,25 @@ body {
 }
 
 .icon-span {
-	margin-right: 1rem;
+    margin-right: 1rem;
     height: 35px;
     width: 35px;
     display: flex;
     position: relative;
     z-index: 2;
+    border-radius: 8px;
+}
+
+.off {
+    border: 1px solid #ab211b;
+}
+
+.on {
     border: 1px solid #243cff;
-    border-radius: 9px;
 }
 
 .icon-span img {
-	height: 50%;
+    height: 50%;
     margin: auto;
     display: block;
     z-index: 2;
@@ -114,7 +121,7 @@ body {
     margin-bottom: 1.38px;
     font-size: 37px;
     background:linear-gradient( 101.76deg,#f37777,#d62ec0 55.05%,#1124c3);
-    font-family: 'Inter',sans-serif;;
+    
     font-weight: 700;
     -webkit-background-clip: text;
     color: transparent;
@@ -137,7 +144,6 @@ body {
     display: block;
     color: #b7afb7;
     margin: .3rem 0;
-    font-weight: 600;
 }
 
 .meeting-details-input input {
@@ -147,7 +153,6 @@ body {
     box-sizing: border-box;
     border-radius: 6px;
     padding: 1rem 1.25rem;
-    font-weight: 600;
     font-family: 'Inter',sans-serif;
     width: 100%;
 }
@@ -157,42 +162,57 @@ body {
     width: 100%;
     color: #fcfcfc;
     padding: 14px 25px;
+    font-size: 14px;
     border: none;
     font-family: 'Inter',sans-serif;
     font-weight: 600;
     background: linear-gradient(150.76deg ,#1a2ab4 -3.15%, #8e1fc7 55.05%,#e8a2a2 110.87%);
 }
 
-@font-face {
-  font-family: Inter;
-  src: url(Inter-Regular.ttf);
+  .icon a {
+    display:block;
+    color:#b7afb7;
+    line-height: 47px;
+    text-decoration:none;
 }
 
-.icon a {
-    display:block;
-    padding:0 10px; 
-    color:#b7afb7;
-    line-height: 60px;
-    text-decoration:none;
+.icon ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .icon ul ul {
     display: none;
-    position: absolute; 
-    top: 60px; 
+    position: absolute;
+    top: 60px;
+    border-radius: 4px;
+    list-style-type: none;
+    margin-left: -17px;
+    background: #2a2a2a;
 }
 
- .icon ul li:hover > ul {
+.icon ul ul a {
+    color: #858c9e;
+    color: #b7afb7;
+    font-size: 13px;
+    padding-left: 19px;
+    width: 70%;
+}
+
+.icon ul li:hover > ul {
     display:inherit;
 }
-    
+
 .icon ul ul li {
-    width:170px;
-    float:none;
-    display:list-item;
+    width:196px;
+    display:flex;
     position: relative;
 }
 
+.icon ul ul li input {
+    margin: auto;
+    width: 30%;
+}
 @media screen and (max-width: 800px)  {
     .content-container {
         width:100%;
@@ -217,13 +237,14 @@ body {
 
     .camera {
         height: 100%;
+        width: 100%;
     }
     .camera-stream {
         transform:translate(-50%,-60%) scale(.6);
     }
 
     .inner-section {
-        width: 85%;
+        width: 90%;
         margin-top: 8px;
     }
 
@@ -246,4 +267,3 @@ body {
         font-size:10px;
     }
 }
-
