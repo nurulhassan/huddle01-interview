@@ -119,7 +119,7 @@ body {
 .inner-section h2{
     margin-top: 0px;
     margin-bottom: 1.38px;
-    font-size: 37px;
+    font-size: 42px;
     background:linear-gradient( 101.76deg,#f37777,#d62ec0 55.05%,#1124c3);
     font-family: Inter ExtraBold;
     font-weight: 500;
@@ -276,7 +276,7 @@ body {
     }
 
     .inner-section h2 {
-        font-size: 27px;;
+        font-size: 27px;
     }
     
     .meeting-details {
